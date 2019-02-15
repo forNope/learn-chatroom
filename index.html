@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>node</title>
+  <link rel="stylesheet" type="text/css" href="public/css/aui.css">
+  <link rel="stylesheet" type="text/css" href="public/css/index.css">
+</head>
+<body>
+
+  <video id="video" autoplay style="height:500px;width:500px;"></video>
+  <div class="aui-content-padded">
+
+    <header class="aui-bar aui-bar-nav">
+
+      <a href="#" class="aui-pull-left aui-btn aui-btn-outlined">
+        <span class="aui-iconfont aui-icon-menu"></span>
+      </a>
+
+
+      <div class="aui-title"> phantom chat </div>
+
+      <a href="#" class="aui-pull-right aui-btn aui-btn-outlined">
+        <span class="aui-iconfont aui-icon-search"></span>
+      </a>
+
+    </header>
+
+    <div class="friend-list" id="friendList">
+      <div class="friend-panel" id="friendPanel" style="opacity:1">
+        <div class="friend-avatar" id="friendAvatar">
+          <div class="friend-message-count"></div>
+          <img src="public/source/1.jpg" alt="">
+        </div>
+        <div class="friend-text-wrap">
+          <h3 class="friend-nickname aui-ellipsis-1" id="friendNickname">phantom</h3>
+          <p class="friend-message aui-ellipsis-1 aui-text-default" id="friendMessage">测试消息</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="chat-room">
+
+      <div class="aui-chat">
+      </div>
+
+      <div class="chat-tool aui-grid">
+        <div class="aui-col-xs-2">
+          <i id="face" class="aui-iconfont aui-icon-star"></i>
+        </div>
+
+        <div class="aui-col-xs-2">
+          <i id="phone" class="aui-iconfont aui-icon-phone"></i>
+        </div>
+
+        <div class="aui-col-xs-2">
+          <i id="image" class="aui-iconfont aui-icon-image"></i>
+        </div>
+
+        <div class="aui-col-xs-2">
+          <i id="video" class="aui-iconfont aui-icon-video"></i>
+        </div>
+
+        <div class="aui-col-xs-2">
+          <i id="camera" class="aui-iconfont aui-icon-camera"></i>
+        </div>
+      </div>
+
+      <div class="chat-scanner">
+        <div id="scanner" class="chat-scanner-text" contenteditable="true">
+          <img src="public/face/1.jpg" >
+        </div>
+        <div class="chat-scanner-btn">
+          <div id="send" class="aui-btn">发送</div>
+          <div id="close" class="aui-btn">关闭</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="initiate-audio">
+        <div class="friend-avatar">
+          <img src="public/source/1.jpg">
+        </div>
+        <p></p>
+        <div class="button-wrap" >
+          <button>接受</button>
+            <button >拒绝</button>
+        </div>
+
+    </div>
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+  <script src="test.js"></script>
+</body>
+</html>
